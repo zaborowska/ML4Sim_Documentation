@@ -8,7 +8,7 @@ Once a trained model is stored in as ONNX, or lwtnn (json), or torch model, it c
 
 A following pictures presents how classes in Par04 examples are defined:
 
-![](/img/MetaHEP/inference.png)
+![](/img/G4FastSim/inference.png)
 
 Each user may reuse class that triggers the ML inference (`MLFastSimModel`) and a chosen inference library (e.g. `OnnxInterface`).
 There is typically no need to reimplement more than one inference library. Those interfaces to the inference libraries should be generic enough to support typical usecases, and most likely do not need any changes.

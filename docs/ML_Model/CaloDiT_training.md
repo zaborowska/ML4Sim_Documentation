@@ -1,7 +1,7 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-# Model optimization
+# CaloDiT
 
 **This page is under construction**

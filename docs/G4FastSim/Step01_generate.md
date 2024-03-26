@@ -8,7 +8,7 @@ sidebar_position: 1
 
 The idea of a general fast shower simulation model is based on the assumption that showers can be represented in an identical format, independent on the physical layouts of the detectors. This is why all showers that we consider (either as model input or output) are represented as energy values scored in a cylindrical mesh readout (a 3D grid), centred around the momentum of the incident particle, as presented in the figure below.
 
-![](/img/MetaHEP/cylinder_detector.png)
+![](/img/G4FastSim/cylinder_detector.png)
 
 Momentum of the particle determines $z$ axis of the local coordinate system. Radius is measured along $r$ axis, and azimuthal angle $\varphi$ is measured in the transverse plane to $z$ axis. There are six parameters of this grid: size and number of cells in the grid in $r, \varphi. z$ coordinates.
 $$
@@ -16,7 +16,7 @@ $$
 $$
 Of course given the full coverage in azimuthal angle, $\Delta\varphi = \frac{2\pi}{P}$, hence only 5 parameters are needed to describe the grid.
 
-![](/img/MetaHEP/cylinder_readout.png) 
+![](/img/G4FastSim/cylinder_readout.png) 
 
 ## Number of cells
 
@@ -67,9 +67,9 @@ and in FCC SW (k4SimGeant4) it is implemented in a same manner, but it takes int
 
 ## Data production
 
-Example code listed above assumes that simulation is run with **single particles**. In case multiple particles will be registered in the calorimeters within the same event, this code must be extended (e.g. by adding a primary track ID to the mesh parameters and the SD hit collections, and then adapt the translation to h5). However, this is not needed for the sake of input production to MetaHEP. Those classes are not needed to run ML model inference, which certainly requires to simulate multiple particles per event (realistic events).
+Example code listed above assumes that simulation is run with **single particles**. In case multiple particles will be registered in the calorimeters within the same event, this code must be extended (e.g. by adding a primary track ID to the mesh parameters and the SD hit collections, and then adapt the translation to h5). However, this is not needed for the sake of input production to G4FastSim. Those classes are not needed to run ML model inference, which certainly requires to simulate multiple particles per event (realistic events).
 
-Data samples that need to be produced for the MetaHEP adaptation are the following:
+Data samples that need to be produced for the G4FastSim adaptation are the following:
 - single electron or photon events (seperate model is used for photons, and seperate one for electrons, but this could also be a condition parameter)
 - discrete or continous energy spectrum of incident particles. A pre-training data included discrete spectrum with 11 samples for energies $E=2^n,~n=0,..,10$ so those values are recommended (in the energy range interesting for the user)
 - discrete angle spectrum of incident particles. A pre-training data included samples from $50^\circ$ to $90^\circ$, with a $10^\circ$ step. This should also depend on the need of the experiment.

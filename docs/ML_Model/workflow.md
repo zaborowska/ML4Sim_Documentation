@@ -1,12 +1,21 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Machine learning workflow
+# ML models for fast sim
+
+## ML Models
+
+We are invovled in development of the ML models for fast shower simulation, and so far we could offer the following models:
+
+1. VAE developed within the context of [Geant4 extended example Par04](https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/html/Examples/extended/Par04.html#par04). Details of that model are presented [here]](VAE_training.md)
+2. CaloDiT - transformer-based diffusion model. More details of that model can be found [here](CaloDiT_training.md).
+
+While all our models can be trained from scratch, our goal is to provide ready pre-trained models that allow for quicker and less data-demanding tuning. It is possible thanks to the general and highly granular structure of the shower dataset, which we call a scoring mesh of energy deposited within each particle shower. Tutorial on how to use both approaches is [available here](../G4FastSim/Step00_overview.md).
 
 ## Workflow description
 
-The figure below represents different components of the ML workflow. 
+The figure below represents different components of the workflow integrating the use of the ML models within the production simulation. Most of the details presented here refer to our initial work, including the application of the VAE model, however the workflow does not change when we change the developed models.
 
 ![](/img/ML_workflow/MLWorkflow.png) 
 
@@ -20,7 +29,7 @@ The figure below represents different components of the ML workflow.
 
 ### Calorimeter setup and mesh definition
 
-In our studies, we use simplified and realistic calorimeter geometries. The simplified calorimeter is a setup of concentric cylinders with interchanging layers of materials (active and passive). In the figure below they are represented in red for passive absorber and in blue for active material. Energy deposits are scored in the detector using a cylindrical readout structure (black), centered around the particle momentum, as shown in the figure below. Dimensions of the readout structure are configured w.r.t what the study needs in terms of granularity. Those readout structures would have the same dimensions for each studied geometry to facilitate creation of the universal shower representation. To ensure the same containment of particles, it implies that the size of the readout cells will be different for each geometry.
+In our studies, we use simplified and realistic calorimeter geometries. The simplified calorimeter is a setup of concentric cylinders with interchanging layers of materials (active and passive), as defined in the [Geant4 extended example Par04](https://gitlab.cern.ch/geant4/geant4/-/tree/master/examples/extended/parameterisations/Par04?ref_type=heads). In the figure below they are represented in red for passive absorber and in blue for active material. Energy deposits are scored in the detector using a cylindrical readout structure (black), centered around the particle momentum, as shown in the figure below. Dimensions of the readout structure are configured w.r.t what the study needs in terms of granularity. Those readout structures would have the same dimensions for each studied geometry to facilitate creation of the universal shower representation. To ensure the same containment of particles, it implies that the size of the readout cells will be different for each geometry.
 
 ![](/img/ML_workflow/Par04_CaloSetup_EnergyDep.png) 
 

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Adaptation
+# MetaHEP Adaptation
 
 The adaptation code to perform the adaptation step on a new geometry using a pre-trained model is available in this [repository](https://gitlab.cern.ch/fastsim/metahep).
 

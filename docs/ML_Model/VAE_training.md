@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Training and results 
+# Par04-VAE - Training and results 
 
 This page summarizes the main VAE trainings and validations starting from a single geometry and energy conditioning towards building a generalizale and reusable VAE model. 
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Generative modeling
@@ -34,7 +34,7 @@ The VAE model used in the studies described in the next pages, which we call Fas
 
 
 
-To read more: 
+### Read more
 
 - Principal component analysis : Pearson, K. On lines and planes of closest fit to systems of points in space.Philosophical Magazine, 1901.
 - Linear discriminant analysis: Fisher,  Ronald A. The use of multiple measurements intaxonomic problems.Annals of eugenics, 7(2):179–188,193.
@@ -48,6 +48,7 @@ To read more about generative models applied in HEP for fast detector simulation
 - Erdmann, M., Glombitza, J., & Quast, T. (2019). Precise simulation of electromagnetic calorimeter showers using a Wasserstein Generative Adversarial Network. Computing and Software for Big Science, 3(1), 1-13.
 - Krause, C., & Shih, D. (2021). Caloflow: Fast and accurate generation of calorimeter showers with normalizing flows. arXiv preprint arXiv:2106.05285.
 - Bourilkov, D. (2019). Machine and deep learning applications in particle physics. International Journal of Modern Physics A, 34(35), 1930019.
+- A Living Review of Machine Learning for Particle Physics, Generative Models, [https://iml-wg.github.io/HEPML-LivingReview/#generative-models-density-estimation](https://iml-wg.github.io/HEPML-LivingReview/#generative-models-density-estimation)
 
 
 

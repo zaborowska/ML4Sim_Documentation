@@ -91,10 +91,10 @@ Classical fast simulation techniques such as [Gflash](http://cds.cern.ch/record/
 
 ### Machine learning for fast simulation
 
-To speed-up detector simulations a class of machine learning models called **generative models** is used in HEP applications. The next page provides more details on these models. 
+To speed-up detector simulations a class of machine learning models called **generative models** can be used in HEP applications. The next page provides more details on these models. 
 
 
-To read more: 
+### Read more
 
 <!---
 For references, the APA style citation is used. 
@@ -104,3 +104,4 @@ For references, the APA style citation is used.
 - Agostinelli, S. (2003). GEANT4 a simulation toolkit. Nucl. Instrum. Meth. A, 506(25), 0.
 - Allison, J., Amako, K., Apostolakis, J. E. A., Araujo, H. A. A. H., Dubois, P. A., Asai, M. A. A. M., ... & Yoshida, H. A. Y. H. (2006). Geant4 developments and applications. IEEE Transactions on nuclear science, 53(1), 270-278.
 - Mahboubi, K., & Jakobs, K. (2005). A fast parametrization of electromagnetic and hadronic calorimeter showers (No. ATL-SOFT-PUB-2006-001).
+- A Living Review of Machine Learning for Particle Physics, Generative Models, [https://iml-wg.github.io/HEPML-LivingReview/#generative-models-density-estimation](https://iml-wg.github.io/HEPML-LivingReview/#generative-models-density-estimation)

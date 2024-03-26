@@ -9,7 +9,7 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ML4Sim', 
+  title: 'G4FastSim',
   tagline: 'Machine Learning for Fast Shower Simulation in High Energy Physics',
   url: 'https://g4fastsim.web.cern.ch',
   baseUrl: '/',
@@ -17,28 +17,18 @@ const config = {
   onBrokenMarkdownLinks: 'warn', 
   favicon: 'img/favicon.ico',
   organizationName: 'CERN', 
-  projectName: 'ML4Sim', 
+  projectName: 'G4FastSim',
   presets: [
-
-
-    
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/DalilaSalamani/ML4Sim_Documentation.git',
+          editUrl: 'https://gitlab.cern.ch/fastsim/fast-sim-website',
 	  remarkPlugins: [math],
 	  rehypePlugins: [katex],
         },
-        /**
-        blog: {
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        */
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -68,11 +58,11 @@ stylesheets: [
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Get started',
+            label: 'Full vs fast simulation',
           },
           {
             type: 'doc',
-            docId: 'ml_workflow',
+            docId: 'ML_Model/workflow',
             position: 'left',
             label: 'ML fast simulation',
           },
@@ -84,20 +74,20 @@ stylesheets: [
           },
           {
             type: 'doc',
-            docId: 'MetaHEP/Step00_overview',
+            docId: 'G4FastSim/Step00_overview',
             position: 'left',
-            label: 'MetaHEP',
+            label: 'How to use?',
           },
           /** {to: '/blog', label: 'Blog', position: 'left'}, */
           /**{to: '/help', label: 'Help', position: 'left'},  to add new item */
           {
-            href: 'https://github.com/DalilaSalamani/ML4Sim_Documentation.git',
-            label: 'Webpage GitHub',
+            href: 'https://gitlab.cern.ch/fastsim/fast-sim-website',
+            label: 'Webpage GitLab',
             position: 'right',
           },
           {
             href: 'https://gitlab.cern.ch/fastsim',
-            label: 'Project repositories on GitLab',
+            label: 'FastSim repositories on GitLab',
             position: 'right',
           },
         ],
@@ -109,20 +99,20 @@ stylesheets: [
             title: 'Docs',
             items: [
               {
-                label: 'Get started',
+                label: 'Introduction',
                 to: '/docs/intro',
               },
               {
                 label: 'ML fast simulation',
-                to: '/docs/ml_workflow',
+                to: '/docs/ML_Model/workflow',
               },
               {
                 label: 'Inference within Geant4',
                 to: '/docs/G4_Inference/from_training_to_inference',
               },
               {
-                label: 'MetaHEP',
-                to: '/docs/MetaHEP/Step00_overview',
+                label: 'How to use? Tutorial',
+                to: '/docs/G4FastSim/Step00_overview',
               },
             ],
           },
@@ -130,12 +120,12 @@ stylesheets: [
             title: 'Community',
             items: [
               {
-                label: 'ML4Sim',
+                label: 'Indico meetings',
                 href: 'https://indico.cern.ch/category/13860/',
               },
               {
                 label: 'Mattermost',
-                href: 'https://mattermost.web.cern.ch/ml4sim/channels/town-square',
+                href: 'https://mattermost.web.cern.ch/fastsim/channels/town-square',
               },
               {
                 label: 'CaloChallenge',
@@ -151,8 +141,8 @@ stylesheets: [
                 to: '/blog',
               },*/
               {
-                label: 'Webpage GitHub',
-                href: 'https://github.com/DalilaSalamani/ML4Sim_Documentation.git',
+                label: 'Webpage GitLab',
+                href: 'https://gitlab.cern.ch/fastsim/fast-sim-website',
               }, 
               {
                 label: 'GitLab Repositories',

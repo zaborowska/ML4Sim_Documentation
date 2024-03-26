@@ -16,7 +16,7 @@ Useful links:
 
 ### Calorimeter setup
 
-The calorimeter in this example is a setup of concentric cylinders of layers. Each layer consists of passive and active material (or just active material for homogeneous calorimeters). Energy deposits are scored in the detector using the cylindrical readout structure, centred around the particle momentum, as explained in [Dataset description](docs/ml_workflow#dataset-description). In this example 90 layers of 1.4mm of W as absorber and 0.3 mm of active material are defined, with a very granular readout segmentation (r,&phi;,z)=(18,50,45).
+The calorimeter in this example is a setup of concentric cylinders of layers. Each layer consists of passive and active material (or just active material for homogeneous calorimeters). Energy deposits are scored in the detector using the cylindrical readout structure, centred around the particle momentum, as explained in [Dataset description](docs/ML_Model/00_workflow#dataset-description). In this example 90 layers of 1.4mm of W as absorber and 0.3 mm of active material are defined, with a very granular readout segmentation (r,&phi;,z)=(18,50,45).
 
 Detector and readout (mesh) used in the example macros are configured with following commands:
 
